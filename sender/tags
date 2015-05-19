@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BIN	Makefile	/^BIN=prog$/;"	m
+BIN_DIR	Makefile	/^BIN_DIR=bin$/;"	m
+BUF_MAX	mainloop.c	/^#define BUF_MAX /;"	d	file:
+BUILD_DIR	Makefile	/^BUILD_DIR=build$/;"	m
+CXX	Makefile	/^CXX=gcc$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS=-Wall -MMD$/;"	m
+DEPENDS	Makefile	/^DEPENDS=$(SOURCES:%.$(EXT)=$(BUILD_DIR)\/%.d)$/;"	m
+EXIT_ON_FAIL	utils.h	/^#define EXIT_ON_FAIL(/;"	d
+EXT	Makefile	/^EXT=c$/;"	m
+INCLUDES	Makefile	/^INCLUDES=-I\/usr\/local\/include$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS=-L\/usr\/local\/lib $/;"	m
+LDLIBS	Makefile	/^LDLIBS= $/;"	m
+OBJECTS	Makefile	/^OBJECTS=$(SOURCES:%.$(EXT)=$(BUILD_DIR)\/%.o)$/;"	m
+SOURCES	Makefile	/^SOURCES=$(wildcard *.$(EXT))$/;"	m
+_ADDR_H_	addr.h	/^#define _ADDR_H_$/;"	d
+_ARG_H_	arg.h	/^#define _ARG_H_$/;"	d
+_CONN_H_	conn.h	/^#define _CONN_H_$/;"	d
+_MAIN_LOOP_H	mainloop.h	/^#define _MAIN_LOOP_H$/;"	d
+_SIG_H_	sig.h	/^#define _SIG_H_$/;"	d
+_SOCK_H_	sock.h	/^#define _SOCK_H_$/;"	d
+_UTILS_H_	utils.h	/^#define _UTILS_H_$/;"	d
+addr_create	addr.c	/^addr_create()$/;"	f
+arg_proc	arg.c	/^arg_proc(int argc, char** argv) $/;"	f
+arg_usage	arg.c	/^arg_usage()$/;"	f	file:
+connect_to	conn.c	/^connect_to()$/;"	f
+hostaddr	conn.c	/^struct sockaddr_in hostaddr;$/;"	v	typeref:struct:sockaddr_in
+hostip	addr.c	/^const char* hostip;$/;"	v
+hostport	addr.c	/^in_port_t hostport;$/;"	v
+main	sender.c	/^int main(int argc, char** argv) {$/;"	f
+ml_start	mainloop.c	/^ml_start() $/;"	f
+sig_handler	sig.c	/^sig_handler(int signum) $/;"	f	file:
+sig_init	sig.c	/^sig_init() $/;"	f
+sock_create	sock.c	/^sock_create()$/;"	f
+sock_destroy	sock.c	/^sock_destroy(int sockfd)$/;"	f
+sockfd	conn.c	/^int sockfd;$/;"	v
